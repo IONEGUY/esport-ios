@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (5.4.3)
+  - Closures (0.7)
+  - Swinject (2.7.1)
+  - SwinjectAutoregistration (2.7.0):
+    - Swinject (~> 2.7)
+
+DEPENDENCIES:
+  - Alamofire
+  - Closures
+  - Swinject
+  - SwinjectAutoregistration
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Closures
+    - Swinject
+    - SwinjectAutoregistration
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Closures: a83b9892a5b1c4125a9dfcd53e2754db5d7f6d22
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  SwinjectAutoregistration: 330f5012642a8b5c89a8a4adb0c5e52df07382c0
+
+PODFILE CHECKSUM: 7e4c838fa86715dc057a512ea7b7a548ddd7d27b
+
+COCOAPODS: 1.10.0
