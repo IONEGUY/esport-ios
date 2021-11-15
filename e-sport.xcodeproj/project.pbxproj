@@ -83,8 +83,6 @@
 		FA4B2F8227171FEA001EF17C /* MapNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B2F8127171FEA001EF17C /* MapNavigationView.swift */; };
 		FA55913F2727185C00BECCF8 /* TextMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55913E2727185C00BECCF8 /* TextMessage.swift */; };
 		FA55914127272AB300BECCF8 /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55914027272AB300BECCF8 /* MenuService.swift */; };
-		FA5668E527220EA500718940 /* CameraViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5668E427220EA500718940 /* CameraViewControllerRepresentable.swift */; };
-		FA5668E727220ED800718940 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5668E627220ED800718940 /* CameraController.swift */; };
 		FA5668E92722E72500718940 /* MessageResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5668E82722E72500718940 /* MessageResponce.swift */; };
 		FA5668EB2722EE4000718940 /* ChatBotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5668EA2722EE4000718940 /* ChatBotService.swift */; };
 		FA5668F02722F0A400718940 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5668EF2722F0A400718940 /* ChatViewModel.swift */; };
@@ -96,6 +94,7 @@
 		FA5B94E6271F4E4E00797074 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B94E5271F4E4E00797074 /* WebView.swift */; };
 		FA5B94E9271F4FF900797074 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B94E8271F4FF900797074 /* UIViewControllerExtension.swift */; };
 		FA603D07272048DD008EF95F /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA603D06272048DD008EF95F /* BottomSheetView.swift */; };
+		FABAF3362741A31600FCB132 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAF3352741A31600FCB132 /* MapView.swift */; };
 		FAC26227273ACBCC00B1961E /* poster_vertical_animation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA44AC432739716500933311 /* poster_vertical_animation.mp4 */; };
 /* End PBXBuildFile section */
 
@@ -181,8 +180,6 @@
 		FA4B2F8127171FEA001EF17C /* MapNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNavigationView.swift; sourceTree = "<group>"; };
 		FA55913E2727185C00BECCF8 /* TextMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessage.swift; sourceTree = "<group>"; };
 		FA55914027272AB300BECCF8 /* MenuService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
-		FA5668E427220EA500718940 /* CameraViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewControllerRepresentable.swift; sourceTree = "<group>"; };
-		FA5668E627220ED800718940 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		FA5668E82722E72500718940 /* MessageResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageResponce.swift; sourceTree = "<group>"; };
 		FA5668EA2722EE4000718940 /* ChatBotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotService.swift; sourceTree = "<group>"; };
 		FA5668EF2722F0A400718940 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
@@ -194,6 +191,7 @@
 		FA5B94E5271F4E4E00797074 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		FA5B94E8271F4FF900797074 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		FA603D06272048DD008EF95F /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		FABAF3352741A31600FCB132 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,7 +391,6 @@
 		FA3D4603270C83F500F11738 /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
-				FA5668E327220E5C00718940 /* CameraView */,
 				FA49F65A2720B6EA0059EFDB /* ExtendedRealityKitView.swift */,
 				FA49F6522720B5070059EFDB /* InteractionMessage.swift */,
 				FA49F64E2720B48C0059EFDB /* LoadingViewWithProgressBar.swift */,
@@ -403,6 +400,7 @@
 				FA603D06272048DD008EF95F /* BottomSheetView.swift */,
 				FA5668F52722F90A00718940 /* IncomingMessage.swift */,
 				FA5668F72722F92300718940 /* OutgoingMessage.swift */,
+				FABAF3352741A31600FCB132 /* MapView.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -486,15 +484,6 @@
 				FA5B94E3271EF95000797074 /* MapNavigationViewModel.swift */,
 			);
 			path = Navigation;
-			sourceTree = "<group>";
-		};
-		FA5668E327220E5C00718940 /* CameraView */ = {
-			isa = PBXGroup;
-			children = (
-				FA5668E427220EA500718940 /* CameraViewControllerRepresentable.swift */,
-				FA5668E627220ED800718940 /* CameraController.swift */,
-			);
-			path = CameraView;
 			sourceTree = "<group>";
 		};
 		FA5668EC2722F07800718940 /* Chat */ = {
@@ -655,7 +644,6 @@
 				FA49F6732720B7E20059EFDB /* FileData.swift in Sources */,
 				FA49F67A2720B7E20059EFDB /* ImageData.swift in Sources */,
 				FA49F65B2720B6EA0059EFDB /* ExtendedRealityKitView.swift in Sources */,
-				FA5668E727220ED800718940 /* CameraController.swift in Sources */,
 				FA49F6812720B7E20059EFDB /* SoundFile.swift in Sources */,
 				FA49F6482720B3BE0059EFDB /* GeneralARViewModel.swift in Sources */,
 				FA3D4620270C83F500F11738 /* ApiError.swift in Sources */,
@@ -693,8 +681,8 @@
 				FA49F67C2720B7E20059EFDB /* ComplexDescription.swift in Sources */,
 				FA3D4653270C83F500F11738 /* AnyPublisherExtensions.swift in Sources */,
 				FA3D45A3270C81F400F11738 /* AppDelegate.swift in Sources */,
+				FABAF3362741A31600FCB132 /* MapView.swift in Sources */,
 				FA4A7BD327299B570012FB12 /* ChatViewBackgroundARViewController.swift in Sources */,
-				FA5668E527220EA500718940 /* CameraViewControllerRepresentable.swift in Sources */,
 				FA3D4626270C83F500F11738 /* MapNavigationService.swift in Sources */,
 				FA3D4652270C83F500F11738 /* UIViewExtensions.swift in Sources */,
 				FA49F6792720B7E20059EFDB /* VideoData.swift in Sources */,

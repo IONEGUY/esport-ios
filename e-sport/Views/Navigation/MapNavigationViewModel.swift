@@ -22,9 +22,8 @@ class MapNavigationViewModel: ObservableObject {
     
     init() {
         locationManager.onLocationUpdated
-            .first()
             .map { MKCoordinateRegion(center: $0, span:
-                       MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002)) }
+                    MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)) }
             .assign(to: \.currentLocation, on: self)
             .store(in: &cancellables)
         

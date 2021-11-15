@@ -15,18 +15,7 @@ struct MapNavigationView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Map(coordinateRegion: $viewModel.currentLocation,
-                    interactionModes: MapInteractionModes.all,
-                    showsUserLocation: true,
-                    userTrackingMode: $viewModel.mapTrackingMode,
-                    annotationItems: viewModel.pins,
-                    annotationContent: { location in MapAnnotation(coordinate: location.coordinate) {
-                        Image("map_pin")
-                            .onTapGesture(count: 1) {
-                                viewModel.currentSelectedPin = location
-                                bottomSheetShown = true
-                            }
-                     } })
+                MapViewWithRoute(userLocation: $viewModel.currentLocation)
                     .edgesIgnoringSafeArea(.top)
                     .navigationTitle("Navigation")
                 BottomSheetView(isOpen: self.$bottomSheetShown, maxHeight: 250) {
